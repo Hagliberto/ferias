@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Assinatura - CAERN</title>
+    <link rel="stylesheet" href="ferias.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <h2>ASSINATURA ELETRÔNICA DE AVISO E RECIBO DE FÉRIAS</h2>
+        <div class="pills-container">
+            <button class="pill active" onclick="loadStep(1, this)">Passo 1</button>
+            <button class="pill" onclick="loadStep(2, this)">Passo 2</button>
+            <button class="pill" onclick="loadStep(3, this)">Passo 3</button>
+            <button class="pill" onclick="loadStep(4, this)">Passo 4</button>
+            <button class="pill" onclick="loadStep(5, this)">Passo 5</button>
+            <button class="pill" onclick="loadStep(6, this)">Passo 6</button>
+        </div>
+    </div>
+
+    <div id="display-content" class="main-card">
+        </div>
+
+    <button class="btn-download" onclick="generateRobustPDF()">
+        📄 Baixar Manual Completo (PDF)
+    </button>
+
+    <script src="ferias.js"></script>
+</body>
+</html>
