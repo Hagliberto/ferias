@@ -36,7 +36,7 @@ async function generateRobustPDF() {
     pdfArea.innerHTML = `<h1 style="color:#0054a6; text-align:center;">Manual de Assinatura de Férias - CAERN</h1><hr>`;
 
     // Carregar todos os passos para compor o manual completo
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 6; i++) {
         try {
             const res = await fetch(passosLinks[i]);
             const text = await res.text();
@@ -63,3 +63,4 @@ async function generateRobustPDF() {
 }
 
 window.onload = () => loadStep(1);
+
